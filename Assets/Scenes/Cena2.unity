@@ -2038,7 +2038,7 @@ RectTransform:
   m_GameObject: {fileID: 1282679162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2979, y: 1.2979, z: 1.2979}
   m_Children:
   - {fileID: 48849265}
   - {fileID: 697655764}
@@ -2330,12 +2330,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2661,6 +2661,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 48849265}
     m_Modifications:
+    - target: {fileID: 8520774701147752496, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
+      propertyPath: m_margin.z
+      value: -38.09056
+      objectReference: {fileID: 0}
     - target: {fileID: 8520774701147752497, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
