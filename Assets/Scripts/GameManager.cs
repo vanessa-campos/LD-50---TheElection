@@ -7,30 +7,33 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] int round;
+    [SerializeField] int round, countCandidateInteract;
+    [SerializeField] string[] comentarysCandidate1, comentarysCandidate2, comentarysCandidate3;
     [SerializeField] string[] Dates;
     [SerializeField] GameObject[] FinalStory, News, Comments;
     [SerializeField] public  TMP_Text dateText, themeText; 
     [SerializeField] GameObject panelComments, panelOptions, chooseComment, buttonSend;
     [SerializeField] Transform commentPos;
-    [SerializeField] TMP_Text newsFeed;
+    [SerializeField] TMP_Text newsFeed, textBaloonComentary;
     [SerializeField] GameObject comment1, comment2, comment3;
-
     [SerializeField] Sprite[] candidatesImages;
     [SerializeField] Image winnerImage;
     [SerializeField] TMP_Text winnerName, winnerStory;
-
+    [HideInInspector] public bool inputEnter;
     private GameObject comment;
     private int votesA, votesB, votesC;
     private Theme Theme;
 
     void Awake()
     {
+        countCandidateInteract = 1;
         Comments = GameObject.FindGameObjectsWithTag("Comment");
         News = GameObject.FindGameObjectsWithTag("News");
     }
     void Start()
     {
+        string theme = PlayerPrefs.GetString("Theme");
+
         switch(SceneManager.GetActiveScene().buildIndex)
         {
             case 1:
@@ -46,7 +49,7 @@ public class GameManager : MonoBehaviour
                 dateText.text = Dates[round];
                 Theme = FindObjectOfType<Theme>();
                 int r = Random.Range(0, Theme.themes.Count - round);
-                string theme = Theme.themes[r];
+                theme = Theme.themes[r];
                 themeText.text = theme;
                 PlayerPrefs.SetString("Theme", theme);
                 Theme.themes.Remove(theme);
@@ -59,13 +62,43 @@ public class GameManager : MonoBehaviour
                 SetWinner();
                 break;
         }
+
+
+        
+        switch(countCandidateInteract)
+        {
+            case 1:
+                    switch (PlayerPrefs.GetString("Theme"))
+                    {
+                        case "Topic Debate: Covid-19 / Vaccine":
+                            textBaloonComentary.text = comentarysCandidate1[1];
+                            break;
+                        case "Topic Debate: Education":
+                            textBaloonComentary.text = comentarysCandidate1[2];
+                            break;
+                        case "Topic Debate: Pension":
+                            textBaloonComentary.text = comentarysCandidate1[3];
+                            break;
+                        case "Topic Debate: Political Reform":
+                            textBaloonComentary.text = comentarysCandidate1[4];
+                            break;
+                        case "Topic Debate: War / Ukraine-Russia":
+                            textBaloonComentary.text = comentarysCandidate1[5];
+                            break;
+                    }
+                break;
+        }
     }
 
     void Update()
     {
-        
+        Inputs();
+        ControllerComentarys();
     }
 
+
+
+    
     public void OpenPanelComments()
     {
         panelComments.SetActive(true);
@@ -143,6 +176,82 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void ControllerComentarys()
+    {
+        if(inputEnter){
+
+            countCandidateInteract = countCandidateInteract < 3 ? countCandidateInteract += 1 : countCandidateInteract = countCandidateInteract;
+            switch(countCandidateInteract)
+            {
+                case 1:
+                        switch (PlayerPrefs.GetString("Theme"))
+                        {
+                            case "Topic Debate: Covid-19 / Vaccine":
+                                textBaloonComentary.text = comentarysCandidate1[1];
+                                break;
+                            case "Topic Debate: Education":
+                                textBaloonComentary.text = comentarysCandidate1[2];
+                                break;
+                            case "Topic Debate: Pension":
+                                textBaloonComentary.text = comentarysCandidate1[3];
+                                break;
+                            case "Topic Debate: Political Reform":
+                                textBaloonComentary.text = comentarysCandidate1[4];
+                                break;
+                            case "Topic Debate: War / Ukraine-Russia":
+                                textBaloonComentary.text = comentarysCandidate1[5];
+                                break;
+                        }
+                    break;
+
+                case 2:
+                    switch (PlayerPrefs.GetString("Theme"))
+                        {
+                            case "Topic Debate: Covid-19 / Vaccine":
+                                textBaloonComentary.text = comentarysCandidate2[1];
+                                break;
+                            case "Topic Debate: Education":
+                                textBaloonComentary.text = comentarysCandidate2[2];
+                                break;
+                            case "Topic Debate: Pension":
+                                textBaloonComentary.text = comentarysCandidate2[3];
+                                break;
+                            case "Topic Debate: Political Reform":
+                                textBaloonComentary.text = comentarysCandidate2[4];
+                                break;
+                            case "Topic Debate: War / Ukraine-Russia":
+                                textBaloonComentary.text = comentarysCandidate2[5];
+                                break;
+                        }
+                    break;
+
+                case 3:
+                    switch (PlayerPrefs.GetString("Theme"))
+                        {
+                            case "Topic Debate: Covid-19 / Vaccine":
+                                textBaloonComentary.text = comentarysCandidate3[1];
+                                break;
+                            case "Topic Debate: Education":
+                                textBaloonComentary.text = comentarysCandidate3[2];
+                                break;
+                            case "Topic Debate: Pension":
+                                textBaloonComentary.text = comentarysCandidate3[3];
+                                break;
+                            case "Topic Debate: Political Reform":
+                                textBaloonComentary.text = comentarysCandidate3[4];
+                                break;
+                            case "Topic Debate: War / Ukraine-Russia":
+                                textBaloonComentary.text = comentarysCandidate3[5];
+                                break;
+                        }
+                    break;
+            }
+        }
+    }
+    void Inputs()
+    {
+        inputEnter = Input.GetKeyDown(KeyCode.Return) ? inputEnter = true : inputEnter = false;
+    }
     void ChooseRandomNews()
     {
         string theme = PlayerPrefs.GetString("Theme");

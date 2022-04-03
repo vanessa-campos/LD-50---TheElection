@@ -738,7 +738,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Topic Debate: ----'
+  m_text: 'Topic Debate: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1518,6 +1518,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: textBaloonComentary
+      value: 
+      objectReference: {fileID: 1363684857}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: Themes.Array.data[0]
       value: 'Topic Debate: Covid-19 / Vaccine'
       objectReference: {fileID: 0}
@@ -1536,6 +1540,90 @@ PrefabInstance:
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: Themes.Array.data[4]
       value: 'Topic Debate: War / Ukraine-Russia'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate1.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate2.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate3.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidates.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate1.Array.data[1]
+      value: aa
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate1.Array.data[2]
+      value: ab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate1.Array.data[3]
+      value: ac
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate1.Array.data[4]
+      value: ad
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate1.Array.data[5]
+      value: ae
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate2.Array.data[1]
+      value: ba
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate2.Array.data[2]
+      value: bb
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate2.Array.data[3]
+      value: bc
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate2.Array.data[4]
+      value: bd
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate2.Array.data[5]
+      value: be
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate3.Array.data[1]
+      value: ca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate3.Array.data[2]
+      value: cb
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate3.Array.data[3]
+      value: cc
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate3.Array.data[4]
+      value: cd
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidate3.Array.data[5]
+      value: ce
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidates.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
+      propertyPath: comentarysCandidates.Array.data[1]
+      value: Acho bom o tema
       objectReference: {fileID: 0}
     - target: {fileID: 8130898000945037374, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: m_Name
