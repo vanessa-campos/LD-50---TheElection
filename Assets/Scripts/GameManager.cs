@@ -53,7 +53,32 @@ public class GameManager : MonoBehaviour
                 themeText.text = theme;
                 PlayerPrefs.SetString("Theme", theme);
                 Theme.themes.Remove(theme);
+
+                switch(countCandidateInteract)
+                {
+                    case 1:
+                        switch (PlayerPrefs.GetString("Theme"))
+                        {
+                            case "Topic Debate: Covid-19 / Vaccine":
+                                textBaloonComentary.text = comentarysCandidate1[1];
+                                break;
+                            case "Topic Debate: Education":
+                                textBaloonComentary.text = comentarysCandidate1[2];
+                                break;
+                            case "Topic Debate: Pension":
+                                textBaloonComentary.text = comentarysCandidate1[3];
+                                break;
+                            case "Topic Debate: Political Reform":
+                                textBaloonComentary.text = comentarysCandidate1[4];
+                                break;
+                            case "Topic Debate: War / Ukraine-Russia":
+                                textBaloonComentary.text = comentarysCandidate1[5];
+                                break;
+                        }
+                        break;
+                }
                 break;
+                
             case 2:
                 round = PlayerPrefs.GetInt("Round");
                 ChooseRandomNews();
@@ -65,29 +90,7 @@ public class GameManager : MonoBehaviour
 
 
         
-        switch(countCandidateInteract)
-        {
-            case 1:
-                    switch (PlayerPrefs.GetString("Theme"))
-                    {
-                        case "Topic Debate: Covid-19 / Vaccine":
-                            textBaloonComentary.text = comentarysCandidate1[1];
-                            break;
-                        case "Topic Debate: Education":
-                            textBaloonComentary.text = comentarysCandidate1[2];
-                            break;
-                        case "Topic Debate: Pension":
-                            textBaloonComentary.text = comentarysCandidate1[3];
-                            break;
-                        case "Topic Debate: Political Reform":
-                            textBaloonComentary.text = comentarysCandidate1[4];
-                            break;
-                        case "Topic Debate: War / Ukraine-Russia":
-                            textBaloonComentary.text = comentarysCandidate1[5];
-                            break;
-                    }
-                break;
-        }
+        
     }
 
     void Update()
