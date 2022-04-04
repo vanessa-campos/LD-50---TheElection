@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
                 }
                 dateText.text = Dates[round];
                 Theme = FindObjectOfType<Theme>();
-                int r = Random.Range(0, Theme.themes.Count - round);
+                int r = Random.Range(0, Theme.themes.Count);
                 theme = Theme.themes[r];
                 themeText.text = theme;
                 PlayerPrefs.SetString("Theme", theme);

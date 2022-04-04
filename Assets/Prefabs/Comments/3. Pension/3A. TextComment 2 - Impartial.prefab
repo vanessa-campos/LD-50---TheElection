@@ -148,5 +148,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VotesA: 0
-  VotesB: 0
-  VotesC: 0
+  VotesB: -5
+  VotesC: 5
