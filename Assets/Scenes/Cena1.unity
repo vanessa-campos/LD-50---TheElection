@@ -408,8 +408,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1189588727}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: EndButton
-        m_Mode: 1
+        m_MethodName: ContinueButton
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -676,11 +676,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1189588727}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ContinueButton
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1702,19 +1702,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate1.Array.data[1]
-      value: aa
+      value: '"It is important that laboratories keep studying the virus and be better
+        prepared for new waves or even another pandemic." - Candidate A'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate1.Array.data[2]
-      value: ab
+      value: '"The Ministry of Education needs to review the school level currently
+        required and develop better incentive programs for public education." - Candidate
+        A'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate1.Array.data[3]
-      value: ac
+      value: '"Pensions have to be protected, so many workers depend on it." - Candidate
+        A'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate1.Array.data[4]
-      value: ad
+      value: '"We don''t need as many administrators as we have today, so many positions
+        are a waste of public money." - Candidate A'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate1.Array.data[5]
@@ -1724,47 +1729,58 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate2.Array.data[1]
-      value: ba
+      value: '"Vaccination is not the only problem, we should be more concerned with
+        all the people who became unemployed because of this pandemic." - Candidate
+        B'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate2.Array.data[2]
-      value: bb
+      value: '"The higher education funding project must be improved and implement
+        new payment options for enrolled students." - Candidate B'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate2.Array.data[3]
-      value: bc
+      value: '"Ages need to be reviewed, payment deadlines changed and especially
+        inspection of who is entitled or not." - Candidate B'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate2.Array.data[4]
-      value: bd
+      value: '"Several recent administrations have had difficulties regardless of
+        the number of existing positions, this is not the main problem." - Candidate
+        B'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate2.Array.data[5]
-      value: '"Russia has every right to invade ukraine, after all they were allies
+      value: '"Russia has every right to invade Ukraine, after all they were allies
         for so many years and historically this is not the first time this has happened."
         - Candidate B'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate3.Array.data[1]
-      value: ca
+      value: '"More doses should be imported from China and make vaccination mandatory,
+        requiring vaccination card for travel and stay in closed places." - Candidate
+        C'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate3.Array.data[2]
-      value: cb
+      value: '"New schools must be built and teachers need to be more valued and
+        respected." - Candidate C'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate3.Array.data[3]
-      value: cc
+      value: '"The social security funds should be used to pay the nation''s debts."
+        - Candidate C'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate3.Array.data[4]
-      value: cd
+      value: '"What is lacking is supervision in the administrations, many may not
+        do the work as well as few." - Candidate C'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidate3.Array.data[5]
       value: '"This war is in the sole interest of eastern Europe and we must not
-        interfere in any way. let them resolve themselves, this dispute will not
-        affect us."  - Candidate C'
+        interfere in any way. Just let them resolve themselves, this dispute will
+        not affect us."  - Candidate C'
       objectReference: {fileID: 0}
     - target: {fileID: 4873748777291276874, guid: af197c40d7ebfb347bbc096412cd4d44, type: 3}
       propertyPath: comentarysCandidates.Array.data[0]
@@ -2041,7 +2057,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 8
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

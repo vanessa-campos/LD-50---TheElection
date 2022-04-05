@@ -1,113 +1,114 @@
 TEMA COVID-19
 
 COMENTARIOS CANDIDATOS
-A -
-B -
-C -
+A - It is important that laboratories keep studying the virus and be better prepared for new waves or even another pandemic
+B - Vaccination is not the only problem, we should be more concerned with all the people who became unemployed because of the pandemic
+C - More doses should be imported from China and make vaccination mandatory, requiring vaccination card for travel and stay in closed places
 
 NEWS
-A - 
-B -
-C - 
+A - Candidate A refuses to receive the vaccine developed by local laboratories
+B - Candidate B encourages the purchase of more vaccine units and reinforces the importance of vaccination
+C - Images of candidate C leak during the quarantine at a party in your penthouse with a number of people not allowed
 
 RESPOSTAS A
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - Probably because the local vaccines are not as good as the others.
+INDIFERENTE - Take the vaccine or not, I don't care.
+RUIM - She refuses to take the vaccine but we have to, what do you mean?
 
 RESPOSTAS B
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - He is absolutely right and we need to continue to reinforce that.
+INDIFERENTE - I don't want to know about any vaccine.
+RUIM - Well, let's spend more buying vaccines and forget about people.
 
 RESPOSTAS C
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - Must have been adulterated or even old images.
+INDIFERENTE - Yeah, they can, we normal people can't.
+RUIM - This is the example he sets and still wants to demand from the people after that.
 
 ---------------------------------------------------------------------------------------------
 TEMA EDUCACAO
 
 COMENTARIOS CANDIDATOS
-A -
-B -
-C -
+A - The Ministry of Education needs to review the school level currently required and develop better incentive programs for public education
+B - The higher education funding project must be improved and implement new payment options for enrolled students
+C - New schools must be built and teachers need to be more valued and respected
 
 NEWS
-A - 
-B -
-C - 
+A - Candidate A discloses his new project to encourage sport and children's education
+B - This Sunday candidate B played ball at half-time with the children of a football tournament in the community
+C - Candidate C participates in the opening of a new day care center in a low-income area 
+
 
 RESPOSTAS A
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - The dedication to children and sports is never enough.
+INDIFERENTE - Another project, how wonderful!
+RUIM - It is with these projects that they divert money and earn that extra.
 
 RESPOSTAS B
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - He showed that he's just another person, like you and me.
+INDIFERENTE - They played ball, what was the result?
+RUIM - Did he have fun or work? This life is very good.
 
 RESPOSTAS C
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - Really needed another daycare, it's a good use of money.
+INDIFERENTE - I imagine the inauguration would happen with or without him.
+RUIM - He went there just to say he had something to do, as usual.
 
 ---------------------------------------------------------------------------------------------
 TEMA PREVIDENCIA
 
 COMENTARIOS CANDIDATOS
-A -
-B -
-C -
+A - Pensions have to be protected, so many workers depend on it
+B - Ages need to be reviewed, payment deadlines changed and especially inspection of who is entitled or not
+C - The social security funds should be used to pay the nation's debts
 
 NEWS
-A - 
-B -
-C - 
+A - In this week's bank, candidate A suggests new positive measures for social security
+B - Candidate B spoke for hours on the bench about pension review
+C - In an interview with the newspaper, candidate C supported the recent cuts to social security
 
 RESPOSTAS A
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - She's doing her job.
+INDIFERENTE - Nothing more than she should do.
+RUIM - She just wants to show up, show she's doing something.
 
 RESPOSTAS B
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - This shows his concern and dedication for this matter.
+INDIFERENTE - Talking for hours or not talking at all, what difference does it make?
+RUIM - I'm sure there were hours of a lot of bullshit.
 
 RESPOSTAS C
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - The cuts were necessary and he's right.
+INDIFERENTE - Who cares what he says or doesn't.
+RUIM - These cuts will only make the situation worse and he knows it.
 
 ---------------------------------------------------------------------------------------------
 TEMA REFORMA POLITICA
 
 COMENTARIOS CANDIDATOS
-A -
-B -
-C -
+A - We don't need as many administrators as we have today, so many positions are a waste of public money
+B - Several recent administrations have had difficulties regardless of the number of existing positions, this is not the main problem
+C - What is lacking is supervision in the administrations, many may not do the work as well as few.
 
 NEWS
-A - 
-B -
-C - 
+A - Candidate A waives his salary during the current financial crisis
+B - This morning, candidate B voted in favor at the bank to increase his own salary
+C - Candidate C did not appear at this week's bank about increases in administrative salaries
 
 RESPOSTAS A
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - Great attitude, in fact everyone should do this.
+INDIFERENTE - Big deal, as if they only depended on salary to support themselves.
+RUIM - She denies receiving the salary, but what about all the other aids and funds they receive, will she deny these too?
 
 RESPOSTAS B
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - If they increase it's because it's necessary.
+INDIFERENTE - They raise their wages every week.
+RUIM - That's what they get paid, to vote for their own benefit.
 
 RESPOSTAS C
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - He didn't attend because he doesn't agree.
+INDIFERENTE - This one got rid of a good one.
+RUIM - Surely he didn't go so he wouldn't have to give his position on the matter.
 
 ---------------------------------------------------------------------------------------------
 TEMA - WAR
@@ -118,23 +119,28 @@ B - "Russia has every right to invade ukraine, after all they were allies for so
 C - "This war is in the sole interest of eastern Europe and we must not interfere in any way. let them resolve themselves, this dispute will not affect us."
 
 NEWS
-A - 
-B -
-C - 
+A - This weekend candidate A attended meetings at the UN to learn more about the conflict and support diplomatic measures.
+B - Candidate B was on a call for hours with the Russian president last night. The topics discussed were not cited.
+C - In a talk this afternoon, candidate C told the audience that in his understanding of the war, if it were happening here, it would be easily resolved between the parties sitting at a bar table having a few beers.
 
 RESPOSTAS A
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - The UN is a big deal, it's good to know that someone cares.
+INDIFERENTE - Attending meetings or not doesn't matter, it won't change anything.
+RUIM - Going to these meetings is just an excuse to travel using public money.
 
 RESPOSTAS B
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - I hope that their talking results in something positive.
+INDIFERENTE - I doubt a phone call from him will make any difference.
+RUIM - They must have agreed what he'll get if he takes his side.
 
 RESPOSTAS C
-BOA -
-INDIFERENTE -
-RUIM -
+BOA - Good idea to make fun of a bad situation to relieve tension.
+INDIFERENTE - Now it made me want to drink one too.
+RUIM - No news coming from a recognized alcoholic.
 
---------------------------------------------------------------------------------------------- 
+--------------------------------------------------------------------------------------------
+HISTORIAS FINAL
+
+A - Candidate A remains out of the country after one month on diplomatic trips despite the current crisis in the country
+B - During months of financial crisis, the country drags on despite the regrets and candidate B continues with his projects and works in development.
+C - After the leak of a money laundering case in which candidate C was involved, the impechement process was initiated by Congress.

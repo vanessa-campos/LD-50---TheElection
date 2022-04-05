@@ -7,7 +7,8 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] int round, countCandidateInteract;
+    [SerializeField] int round, countCandidateInteract, votesA, votesB, votesC;
+    [SerializeField] bool selected;
     [SerializeField] string[] comentarysCandidate1, comentarysCandidate2, comentarysCandidate3;
     [SerializeField] string[] Dates;
     [SerializeField] GameObject[] FinalStory, News, Comments;
@@ -21,7 +22,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text winnerName, winnerStory;
     [HideInInspector] public bool inputEnter;
     private GameObject comment;
-    private int votesA, votesB, votesC;
     private Theme Theme;
 
     void Awake()
@@ -33,19 +33,22 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         string theme = PlayerPrefs.GetString("Theme");
-
+        if (PlayerPrefs.HasKey("Round"))
+        {
+            round = PlayerPrefs.GetInt("Round");
+        }
+        else
+        {
+            round = 0;
+            PlayerPrefs.SetInt("Round", round);
+        }
+        votesA = PlayerPrefs.GetInt("VotesA");
+        votesB = PlayerPrefs.GetInt("VotesB");
+        votesC = PlayerPrefs.GetInt("VotesC");
+        
         switch(SceneManager.GetActiveScene().buildIndex)
         {
-            case 1:
-                if (PlayerPrefs.HasKey("Round"))
-                {
-                    round = PlayerPrefs.GetInt("Round");
-                }
-                else
-                {
-                    round = 0;
-                    PlayerPrefs.SetInt("Round", round);
-                }
+            case 1:                
                 dateText.text = Dates[round];
                 Theme = FindObjectOfType<Theme>();
                 int r = Random.Range(0, Theme.themes.Count);
@@ -80,17 +83,16 @@ public class GameManager : MonoBehaviour
                 break;
                 
             case 2:
-                round = PlayerPrefs.GetInt("Round");
                 ChooseRandomNews();
                 break;
+
             case 3:
-                SetWinner();
+                Winner();
                 break;
-        }
-
-
-        
-        
+            case 4:
+                Winner();
+                break;
+        }  
     }
 
     void Update()
@@ -99,9 +101,6 @@ public class GameManager : MonoBehaviour
         ControllerComentarys();
     }
 
-
-
-    
     public void OpenPanelComments()
     {
         panelComments.SetActive(true);
@@ -117,6 +116,10 @@ public class GameManager : MonoBehaviour
         gameObject.SetActive(false);
         Destroy(comment);
         buttonSend.SetActive(false);
+        if(selected){
+            VotesRemove();
+            selected = false;
+        }
     }
     public void CloseButtonOptions(GameObject gameObject)
     {
@@ -130,33 +133,45 @@ public class GameManager : MonoBehaviour
         comment = Instantiate(gameObject, commentPos);
         panelOptions.SetActive(false);
         buttonSend.SetActive(true);
+        VotesAdd();
+        selected = true;
     }
-    public void SendButton()
-    {
+    void VotesAdd()
+    {        
         votesA = PlayerPrefs.GetInt("VotesA");
         votesB = PlayerPrefs.GetInt("VotesB");
-        votesC = PlayerPrefs.GetInt("VotesC");
-        switch (round)
-        {
-            case 0 & 1:
-                votesA += comment.GetComponent<Comment>().VotesA;
-                votesB += comment.GetComponent<Comment>().VotesB;
-                votesC += comment.GetComponent<Comment>().VotesC;
-                break;
-            case 2 & 3:
-                votesA += comment.GetComponent<Comment>().VotesA * 2;
-                votesB += comment.GetComponent<Comment>().VotesB * 2;
-                votesC += comment.GetComponent<Comment>().VotesC * 2;
-                break;
-            case 4:
-                votesA += comment.GetComponent<Comment>().VotesA * 3;
-                votesB += comment.GetComponent<Comment>().VotesB * 3;
-                votesC += comment.GetComponent<Comment>().VotesC * 3;
-                break;
-        }
+        votesC = PlayerPrefs.GetInt("VotesC");        
+        if(round == 5){
+            votesA += comment.GetComponent<Comment>().VotesA * 3;
+            votesB += comment.GetComponent<Comment>().VotesB * 3;
+            votesC += comment.GetComponent<Comment>().VotesC * 3;
+        }else{
+            votesA += comment.GetComponent<Comment>().VotesA;
+            votesB += comment.GetComponent<Comment>().VotesB;
+            votesC += comment.GetComponent<Comment>().VotesC;
+        }        
         PlayerPrefs.SetInt("VotesA", votesA);
         PlayerPrefs.SetInt("VotesB", votesB);
         PlayerPrefs.SetInt("VotesC", votesC);
+    }
+    void VotesRemove()
+    {
+        if(round == 5){
+            votesA -= comment.GetComponent<Comment>().VotesA * 3;
+            votesB -= comment.GetComponent<Comment>().VotesB * 3;
+            votesC -= comment.GetComponent<Comment>().VotesC * 3;
+        }else{
+            votesA -= comment.GetComponent<Comment>().VotesA;
+            votesB -= comment.GetComponent<Comment>().VotesB;
+            votesC -= comment.GetComponent<Comment>().VotesC;
+        } 
+        PlayerPrefs.SetInt("VotesA", votesA);
+        PlayerPrefs.SetInt("VotesB", votesB);
+        PlayerPrefs.SetInt("VotesC", votesC);
+    }
+    public void SendButton()
+    {        
+        selected = false;
         round = PlayerPrefs.GetInt("Round");
         round += 1;
         PlayerPrefs.SetInt("Round", round); 
@@ -170,15 +185,10 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(1);
         }
     }
-    public void ContinueButton()
+    public void ContinueButton(int scene)
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(scene);
     }
-    public void EndButton()
-    {
-        SceneManager.LoadScene(0);
-    }
-
     public void ControllerComentarys()
     {
         if(inputEnter){
@@ -373,24 +383,48 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("Winner", 3);
         }
     }
-    void SetWinner()
+    void Winner()
     {
         switch (PlayerPrefs.GetInt("Winner"))
         {
             case 1:
                 winnerImage.sprite = candidatesImages[0];
                 winnerName.text = "Candidate A";
-                winnerStory.text = FinalStory[0].GetComponent<TMP_Text>().text;
+                switch(SceneManager.GetActiveScene().buildIndex)
+                {
+                    case 3:
+                        winnerStory.text = "The candidate was elected by " + votesA + "% of the votes.";
+                    break;
+                    case 4:
+                        winnerStory.text = FinalStory[0].GetComponent<TMP_Text>().text;                     
+                        break;
+                }
                 break;
             case 2:
                 winnerImage.sprite = candidatesImages[1];
                 winnerName.text = "Candidate B";
-                winnerStory.text = FinalStory[1].GetComponent<TMP_Text>().text;
+                switch(SceneManager.GetActiveScene().buildIndex)
+                {
+                    case 3:
+                        winnerStory.text = "The candidate was elected by " + votesB + "% of the votes.";
+                    break;
+                    case 4:
+                        winnerStory.text = FinalStory[1].GetComponent<TMP_Text>().text;                     
+                        break;
+                }
                 break;
             case 3:
                 winnerImage.sprite = candidatesImages[2];
                 winnerName.text = "Candidate C";
-                winnerStory.text = FinalStory[2].GetComponent<TMP_Text>().text;
+                switch(SceneManager.GetActiveScene().buildIndex)
+                {
+                    case 3:
+                        winnerStory.text = "The candidate was elected by " + votesC + "% of the votes.";
+                    break;
+                    case 4:
+                        winnerStory.text = FinalStory[2].GetComponent<TMP_Text>().text;                     
+                        break;
+                }
                 break;
         }
     }

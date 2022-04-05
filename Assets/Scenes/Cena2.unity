@@ -288,10 +288,10 @@ RectTransform:
   m_Father: {fileID: 697655764}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 30, y: 0}
-  m_SizeDelta: {x: 530, y: 430}
+  m_SizeDelta: {x: -170, y: -270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &48849264
 GameObject:
@@ -1072,6 +1072,14 @@ PrefabInstance:
     - target: {fileID: 3938950794455898608, guid: 39f25ab6870c079408807cb6b6ccbbd8, type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938950794455898614, guid: 39f25ab6870c079408807cb6b6ccbbd8, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938950794455898614, guid: 39f25ab6870c079408807cb6b6ccbbd8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4418385616424331343, guid: 39f25ab6870c079408807cb6b6ccbbd8, type: 3}
       propertyPath: m_Name
@@ -2112,6 +2120,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 3938950794455898614, guid: 39f25ab6870c079408807cb6b6ccbbd8, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938950794455898614, guid: 39f25ab6870c079408807cb6b6ccbbd8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4418385616424331343, guid: 39f25ab6870c079408807cb6b6ccbbd8, type: 3}
       propertyPath: m_Name
       value: ButtonComment 2
@@ -2516,6 +2532,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 3938950794455898614, guid: 39f25ab6870c079408807cb6b6ccbbd8, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938950794455898614, guid: 39f25ab6870c079408807cb6b6ccbbd8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4418385616424331343, guid: 39f25ab6870c079408807cb6b6ccbbd8, type: 3}
       propertyPath: m_Name
       value: ButtonComment 1
@@ -2662,8 +2686,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 48849265}
     m_Modifications:
     - target: {fileID: 8520774701147752496, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520774701147752496, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
       propertyPath: m_margin.z
       value: -38.09056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520774701147752496, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520774701147752496, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520774701147752496, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8520774701147752497, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
       propertyPath: m_Pivot.x
@@ -2695,7 +2735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8520774701147752497, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -280
+      value: -330
       objectReference: {fileID: 0}
     - target: {fileID: 8520774701147752497, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2731,7 +2771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8520774701147752497, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 40
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8520774701147752497, guid: 03b7d04151bb90b4289aa95c44ec494d, type: 3}
       propertyPath: m_AnchoredPosition.y

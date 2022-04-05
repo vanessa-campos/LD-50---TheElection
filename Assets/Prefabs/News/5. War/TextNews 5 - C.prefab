@@ -65,7 +65,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"News\t\tWar\t\tCandidate C\""
+  m_text: In a talk this afternoon, candidate C told the audience that in his understanding
+    of the war, if it were happening here, it would be easily resolved between the
+    parties sitting at a bar table having a few beers.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
