@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Theme : MonoBehaviour
 {
-    public List<string> themes = new List<string> { "Topic Debate: Covid-19 / Vaccine" , "Topic Debate: Education" , "Topic Debate: Pension" ,
-                            "Topic Debate: Political Reform", "Topic Debate: War / Ukraine-Russia"};
+    public List<string> themes;
+    
+    // new List<string> { "Topic Debate: Covid-19 / Vaccine" , "Topic Debate: Education" , "Topic Debate: Pension" ,
+                            // "Topic Debate: Political Reform", "Topic Debate: War / Ukraine-Russia"};
     int r;
-    GameManager gm;
 
     void Start()
     {

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Comment
   - News
+  - Candidate
+  - Dates
+  - Final
   layers:
   - Default
   - TransparentFX

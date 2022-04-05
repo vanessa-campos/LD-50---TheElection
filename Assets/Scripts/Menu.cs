@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    private void Start()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+    }
+    
     public void QuitClicked()
     {
         Application.Quit();
@@ -13,7 +19,5 @@ public class Menu : MonoBehaviour
     public void LoadLvl()
     {
         SceneManager.LoadScene(1);
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.Save();
     }
 }
