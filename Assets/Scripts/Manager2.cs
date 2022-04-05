@@ -21,8 +21,8 @@ public class Manager2 : MonoBehaviour
 
     void Awake()
     {
-        Comments = GameObject.FindGameObjectsWithTag("Comment");
-        News = GameObject.FindGameObjectsWithTag("News");
+        // Comments = GameObject.FindGameObjectsWithTag("Comment");
+        // News = GameObject.FindGameObjectsWithTag("News");
         theme = PlayerPrefs.GetString("Theme");
         round = PlayerPrefs.GetInt("Round");
         votesA = PlayerPrefs.GetInt("VotesA");

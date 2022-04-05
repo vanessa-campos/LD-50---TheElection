@@ -18,9 +18,9 @@ public class Manager3 : MonoBehaviour
 
     private void Awake()
     {        
-        if(SceneManager.GetActiveScene().buildIndex == 4){
-            FinalStory = GameObject.FindGameObjectsWithTag("Final");
-        }        
+        // if(SceneManager.GetActiveScene().buildIndex == 4){
+        //     FinalStory = GameObject.FindGameObjectsWithTag("Final");
+        // }        
         votesA = PlayerPrefs.GetInt("VotesA");
         votesB = PlayerPrefs.GetInt("VotesB");
         votesC = PlayerPrefs.GetInt("VotesC");

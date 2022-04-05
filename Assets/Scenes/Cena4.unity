@@ -1788,7 +1788,10 @@ MonoBehaviour:
   votesA: 0
   votesB: 0
   votesC: 0
-  FinalStory: []
+  FinalStory:
+  - {fileID: 2119886203}
+  - {fileID: 673973399}
+  - {fileID: 1766554455}
   candidatesImages:
   - {fileID: 21300000, guid: 2193a1b533af03543a9829eb9a665507, type: 3}
   - {fileID: 21300000, guid: 2bead9c87b8cd744eb3acb26daaa39f2, type: 3}

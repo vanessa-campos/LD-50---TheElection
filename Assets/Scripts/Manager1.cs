@@ -15,26 +15,12 @@ public class Manager1 : MonoBehaviour
     [HideInInspector] public bool inputEnter;
     private GameObject comment;
     private Theme Theme;
+    string theme;
 
     void Awake()
     {
         countCandidateInteract = 1;
-        Comments = GameObject.FindGameObjectsWithTag("Comment");
-        News = GameObject.FindGameObjectsWithTag("News");
-        Dates = GameObject.FindGameObjectsWithTag("Dates");
-        CandidatesComments = GameObject.FindGameObjectsWithTag("Candidate");
-        foreach (var item in Dates)
-        {
-            datesText.Add(item.GetComponent<TMP_Text>().text);
-        }
-        foreach (var item in CandidatesComments)
-        {
-            comentarysCandidate.Add(item.GetComponent<TMP_Text>().text);
-        }
-    }
-    void Start()
-    {
-        string theme = PlayerPrefs.GetString("Theme");
+        theme = PlayerPrefs.GetString("Theme");
         if (PlayerPrefs.HasKey("Round"))
         {
             round = PlayerPrefs.GetInt("Round");
@@ -47,31 +33,47 @@ public class Manager1 : MonoBehaviour
         votesA = PlayerPrefs.GetInt("VotesA");
         votesB = PlayerPrefs.GetInt("VotesB");
         votesC = PlayerPrefs.GetInt("VotesC");
-                  
-        dateText.text = datesText[round];
+        
         Theme = FindObjectOfType<Theme>();
         int r = Random.Range(0, Theme.themes.Count);
         theme = Theme.themes[r];
-        themeText.text = theme;
         PlayerPrefs.SetString("Theme", theme);
+
+        // Comments = GameObject.FindGameObjectsWithTag("Comment");
+        // News = GameObject.FindGameObjectsWithTag("News");
+        // Dates = GameObject.FindGameObjectsWithTag("Dates");
+        // CandidatesComments = GameObject.FindGameObjectsWithTag("Candidate");
+        // foreach (var item in Dates)
+        // {
+        //     datesText.Add(item.GetComponent<TMP_Text>().text);
+        // }
+        // foreach (var item in CandidatesComments)
+        // {
+        //     comentarysCandidate.Add(item.GetComponent<TMP_Text>().text);
+        // }
+    }
+    void Start()
+    {                  
+        dateText.text = datesText[round];
+        themeText.text = theme;
         Theme.themes.Remove(theme);
 
-        switch (PlayerPrefs.GetString("Theme"))
+        switch (theme)
         {
             case "Topic Debate: Covid-19 / Vaccine":
-                textBaloonComentary.text = comentarysCandidate[1];
+                textBaloonComentary.text = comentarysCandidate[0];
                 break;
             case "Topic Debate: Education":
-                textBaloonComentary.text = comentarysCandidate[2];
+                textBaloonComentary.text = comentarysCandidate[1];
                 break;
             case "Topic Debate: Pension":
-                textBaloonComentary.text = comentarysCandidate[3];
+                textBaloonComentary.text = comentarysCandidate[2];
                 break;
             case "Topic Debate: Political Reform":
-                textBaloonComentary.text = comentarysCandidate[4];
+                textBaloonComentary.text = comentarysCandidate[3];
                 break;
             case "Topic Debate: War / Ukraine-Russia":
-                textBaloonComentary.text = comentarysCandidate[5];
+                textBaloonComentary.text = comentarysCandidate[4];
                 break;
         }
     }

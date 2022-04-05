@@ -13600,17 +13600,133 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   round: 0
-  countCandidateInteract: 0
-  votesA: 0
-  votesB: 0
-  votesC: 0
-  selected: 0
-  datesText: []
-  comentarysCandidate: []
-  News: []
-  Comments: []
-  Dates: []
-  CandidatesComments: []
+  countCandidateInteract: 1
+  votesA: 33
+  votesB: 33
+  votesC: 33
+  datesText:
+  - May 15, 2022
+  - June 12, 2022
+  - July 10, 2022
+  - August 14, 2022
+  - September 11, 2022
+  comentarysCandidate:
+  - '"It is important that laboratories keep studying the virus and be better prepared
+    for new waves or even another pandemic" - Candidate A '
+  - '"The Ministry of Education needs to review the school level currently required
+    and develop better incentive programs for public education" - Candidate A'
+  - '"Pensions have to be protected, so many workers depend on it" - Candidate A'
+  - '"We don''t need as many administrators as we have today, so many positions are
+    a waste of public money" - Candidate A'
+  - '"They must end this dispute immediately, how many homes and families have already
+    been lost, diplomacy is the best way to resolve interests for both sides." -
+    Candidate A'
+  - '"Vaccination is not the only problem, we should be more concerned with all the
+    people who became unemployed because of the pandemic" - Candidate B'
+  - '"The higher education funding project must be improved and implement new payment
+    options for enrolled students" - Candidate B'
+  - '"Ages need to be reviewed, payment deadlines changed and especially inspection
+    of who is entitled or not" - Candidate B'
+  - '"Several recent administrations have had difficulties regardless of the number
+    of existing positions, this is not the main problem" - Candidate B'
+  - '"Russia has every right to invade ukraine, after all they were allies for so
+    many years and historically this is not the first time this has happened." -
+    Candidate B'
+  - '"More doses should be imported from China and make vaccination mandatory, requiring
+    vaccination card for travel and stay in closed places" - Candidate C'
+  - '"New schools must be built and teachers need to be more valued and respected"
+    - Candidate C'
+  - '"The social security funds should be used to pay the nation''s debts" - Candidate
+    C'
+  - '"What is lacking is supervision in the administrations, many may not do the
+    work as well as few." - Candidate C'
+  - '"This war is in the sole interest of eastern Europe and we must not interfere
+    in any way. let them resolve themselves, this dispute will not affect us" - Candidate
+    C'
+  News:
+  - {fileID: 2837352303564970583}
+  - {fileID: 2326334562017466720}
+  - {fileID: 7600244495696715696}
+  - {fileID: 1967922218365065271}
+  - {fileID: 4615141273476456020}
+  - {fileID: 22236630878646836}
+  - {fileID: 1659364624346596268}
+  - {fileID: 5956059346387094635}
+  - {fileID: 5568656472774527898}
+  - {fileID: 7324989411473706231}
+  - {fileID: 4356076384861978456}
+  - {fileID: 501158550346642917}
+  - {fileID: 6585602970049743802}
+  - {fileID: 6418584207326244413}
+  - {fileID: 722179343610551259}
+  Comments:
+  - {fileID: 1865472323228153421}
+  - {fileID: 368237124535425910}
+  - {fileID: 3805600316118325878}
+  - {fileID: 8943834838646543636}
+  - {fileID: 997198512211714505}
+  - {fileID: 8554858935152983162}
+  - {fileID: 718015213205290874}
+  - {fileID: 36248018165716427}
+  - {fileID: 6320650854103058169}
+  - {fileID: 2700788779104616912}
+  - {fileID: 3233545347428546140}
+  - {fileID: 8450119403682573510}
+  - {fileID: 7718885685734674343}
+  - {fileID: 6666042080886004114}
+  - {fileID: 4807675329406847574}
+  - {fileID: 3162342629815542294}
+  - {fileID: 8865609437025515694}
+  - {fileID: 2909937607490798130}
+  - {fileID: 1633414806207206147}
+  - {fileID: 1780848552654213448}
+  - {fileID: 179996709629227750}
+  - {fileID: 7149764002927623592}
+  - {fileID: 3523467181975305903}
+  - {fileID: 8908218164598007092}
+  - {fileID: 240580945452492151}
+  - {fileID: 1706819397640876314}
+  - {fileID: 5596479215245353090}
+  - {fileID: 514090984579346677}
+  - {fileID: 4752845714911714974}
+  - {fileID: 7399878949255111589}
+  - {fileID: 5948752578984294846}
+  - {fileID: 265942296030706095}
+  - {fileID: 6476376957004478048}
+  - {fileID: 8910529689564722941}
+  - {fileID: 4091581105325138037}
+  - {fileID: 6927283839917163256}
+  - {fileID: 5677269998317747635}
+  - {fileID: 2129434378715677038}
+  - {fileID: 1149569370538162948}
+  - {fileID: 1124590884310678387}
+  - {fileID: 5785132086404544705}
+  - {fileID: 1625137733954090309}
+  - {fileID: 554450323710341962}
+  - {fileID: 5390519097855700898}
+  - {fileID: 2928384100285517955}
+  Dates:
+  - {fileID: 1552089220}
+  - {fileID: 1613046609}
+  - {fileID: 920858976}
+  - {fileID: 976995085}
+  - {fileID: 380858129}
+  CandidatesComments:
+  - {fileID: 889635998}
+  - {fileID: 1468245006}
+  - {fileID: 523114430}
+  - {fileID: 2022672112}
+  - {fileID: 386460127}
+  - {fileID: 595516800}
+  - {fileID: 636300634}
+  - {fileID: 1841786313}
+  - {fileID: 1908056951}
+  - {fileID: 1292222796}
+  - {fileID: 1261185169}
+  - {fileID: 298323948}
+  - {fileID: 1953484721}
+  - {fileID: 900040000}
+  - {fileID: 1826081932}
   dateText: {fileID: 275929432}
   themeText: {fileID: 483390098}
   textBaloonComentary: {fileID: 1363684857}
